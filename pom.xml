@@ -58,7 +58,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-boot.version>2.5.5</spring-boot.version>
-		<spring-boot-oauth.version>2.5.5</spring-boot-oauth.version>
+		<spring-boot-oauth.version>2.6.8</spring-boot-oauth.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<java.version>1.8</java.version>
