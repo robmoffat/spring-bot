@@ -63,14 +63,25 @@ Since your bot is running on `localhost`, Microsoft Teams can't access it.  Howe
 
 ## Configuring the Bot
 
-- Back in the developer portal, use the hostname provided by `ngrok` to specify the bot's endpoint.  Note this is the `ngrok` `HTTPS` address, but with `/api/messages` added to the end as a path.
+- You now need to use the [Microsoft Bot Framework](https://dev.botframework.com/bots) website to set the bot's endpoint details.
 
-![Bot Endpoint](assets/images/teams/4.ConfigureEndpoint.png)
+![Microsoft Bot Framework](assets/images/teams/4.1FindBot.png)
 
--  Next, the bot needs a secret.  Set one of these up and keep it for later to add to your `appplication.yml` file.
+- Navigate to your bot within this portal and go to the settings page, shown below.
 
-![Bot Secret](assets/images/teams/5.ConfigureSecret.png)
+![Microsoft Bot Framework](assets/images/teams/4.2BotSettings.png)
 
+- Use the hostname provided by `ngrok` to specify the bot's endpoint.  Note this is the `ngrok` `HTTPS` address, but with `/api/messages` added to the end as a path.
+
+![Bot Endpoint](assets/images/teams/4.3ConfigureEndpoint.png)
+
+-  Next, the bot needs a secret.  Click on the button marked "Manage Microsoft App Id and Password" shown above.  You'll be taken to the bot's page in Azure, shown below:
+
+![Azure Screen(assets/images/teams/4.4AzureScreen.png)
+
+- Click on the "client credentials" option and set/change the client secret. Keep it for later to add to your `appplication.yml` file.
+
+![Client Secret](assets/images/teams/5b.ClientSecret.png)
 
 ## Create an App Manifest on The Teams Developer Portal
 
